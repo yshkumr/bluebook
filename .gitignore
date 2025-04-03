@@ -23,4 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-opop.jsx
+MatrixRain.jsx
+MobileCodes.jsx
+Old.jsx
