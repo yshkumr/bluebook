@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { FaInstagram, FaGithub, FaReddit } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function App() {
   return (
@@ -40,21 +42,55 @@ export default function App() {
               Not sure when — but it's happening.
             </motion.p>
 
-            <motion.p
-              className="text-sm sm:text-base md:text-lg text-[#0057D9] font-medium"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.2, duration: 1 }}
-            >
-              contact@itsbluebook.com
-            </motion.p>
-
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.6, duration: 1 }}
+              transition={{ delay: 1.2, duration: 1 }}
             >
-              <p className="text-xs sm:text-sm text-gray-500">
+              <p className="text-sm sm:text-base md:text-lg text-[#0057D9] font-medium mb-3">
+                contact@itsbluebook.com
+              </p>
+
+              <div className="mb-3 flex justify-center gap-6 text-gray-400 hover:text-gray-600 text-xl transition-colors mt-5">
+                <a
+                  href="https://x.com/bluebookupdates"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="X (Twitter)"
+                  title="@bluebookupdates"
+                >
+                  <FaXTwitter />
+                </a>
+                <a
+                  href="https://instagram.com/bluebookupdates"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  title="@bluebookupdates"
+                >
+                  <FaInstagram />
+                </a>
+                <a
+                  href="https://github.com/itsbluebook"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                  title="@itsbluebook"
+                >
+                  <FaGithub />
+                </a>
+                <a
+                  href="https://reddit.com/u/itsbluebook"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Reddit"
+                  title="u/itsbluebook"
+                >
+                  <FaReddit />
+                </a>
+              </div>
+
+              <p className="text-xs sm:text-sm text-gray-500 mt-10">
                 Yash Kumar, Founder
               </p>
             </motion.div>
